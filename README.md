@@ -1,37 +1,38 @@
 
 # AI Demand Forecasting Platform
 
-An AI-powered full-stack business intelligence and demand forecasting platform built using FastAPI, React.js, and Prophet forecasting.
+An AI-powered full-stack demand forecasting and business analytics platform built using FastAPI, React.js, and Machine Learning.
 
-The platform allows users to upload historical sales datasets, analyze business performance, generate AI-powered future demand predictions, and download forecasting reports through an interactive analytics dashboard.
+The platform helps businesses upload historical sales datasets, analyze performance metrics, generate future demand predictions, and download business forecasting reports through an interactive dashboard.
 
 ---
 
 # Features
 
-## Authentication Module
+## Authentication System
 - User Registration & Login
 - JWT Authentication
-- Protected Routes
-- Secure Session Management
+- Protected Frontend Routes
+- Secure API Access
+- Session Management
 
 ---
 
-## Dataset Upload Module
-- Upload CSV/Excel Datasets
-- Dataset Validation
+## Dataset Management
+- Upload CSV / Excel Files
+- Automated Dataset Validation
 - Missing Value Handling
-- Duplicate Record Cleaning
-- Automated Data Processing
+- Duplicate Data Removal
+- Data Cleaning Pipeline
 
 ---
 
 ## Analytics Dashboard
-- Total Revenue Analytics
-- Monthly Sales Trends
-- Top Performing Products
-- Interactive Business Charts
-- KPI Analytics Cards
+- Revenue Analytics
+- Monthly Sales Analysis
+- Product Performance Insights
+- Interactive Charts & Graphs
+- KPI Summary Cards
 
 ---
 
@@ -40,7 +41,7 @@ The platform allows users to upload historical sales datasets, analyze business 
 - Future Revenue Prediction
 - Product-wise Forecasting
 - Category-wise Forecasting
-- Forecast Error Evaluation (MAPE)
+- Forecast Accuracy Evaluation (MAPE)
 
 ---
 
@@ -56,8 +57,8 @@ The platform allows users to upload historical sales datasets, analyze business 
 
 ## Backend
 - FastAPI
-- MySQL
 - SQLAlchemy
+- MySQL
 - JWT Authentication
 - Pandas
 - Prophet
@@ -68,6 +69,7 @@ The platform allows users to upload historical sales datasets, analyze business 
 
 ## Frontend
 - React.js
+- Vite
 - Tailwind CSS
 - Axios
 - Recharts
@@ -81,7 +83,7 @@ The platform allows users to upload historical sales datasets, analyze business 
 
 ```bash
 AI-Demand-Forecasting/
-
+│
 ├── backend/
 │   ├── app/
 │   │   ├── auth/
@@ -93,31 +95,39 @@ AI-Demand-Forecasting/
 │   │   ├── database.py
 │   │   └── main.py
 │   │
-│   ├── reports/
 │   ├── uploads/
+│   ├── reports/
 │   ├── requirements.txt
 │   └── .env
 │
 ├── frontend/
 │   ├── src/
 │   │   ├── api/
+│   │   ├── assets/
 │   │   ├── components/
 │   │   ├── layouts/
 │   │   ├── pages/
-│   │   ├── assets/
 │   │   └── main.jsx
 │   │
+│   ├── public/
 │   ├── package.json
 │   └── vite.config.js
 │
 ├── .gitignore
-│
 └── README.md
 ```
 
 ---
 
 # Installation Guide
+
+## Clone Repository
+
+```bash
+git clone https://github.com/your-username/AI_Demand_Forecasting.git
+```
+
+---
 
 ## Backend Setup
 
@@ -129,7 +139,7 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
 
-Backend will run on:
+Backend runs on:
 
 ```bash
 http://127.0.0.1:8000
@@ -147,7 +157,7 @@ npm install
 npm run dev
 ```
 
-Frontend will run on:
+Frontend runs on:
 
 ```bash
 http://localhost:5173
@@ -157,7 +167,7 @@ http://localhost:5173
 
 # Environment Variables
 
-Create `.env` file inside backend folder:
+Create a `.env` file inside the `backend` folder:
 
 ```env
 DATABASE_URL=mysql+pymysql://root:password@localhost/ai_forecasting
@@ -173,31 +183,41 @@ ACCESS_TOKEN_EXPIRE_MINUTES=60
 
 # AI Forecasting Workflow
 
-1. Upload historical sales dataset
-2. Dataset preprocessing using Pandas
-3. Time-series model training using Prophet
-4. Future revenue prediction generation
-5. Forecast visualization and analytics
-6. PDF/Excel report generation
+```text
+Dataset Upload
+      ↓
+Data Preprocessing
+      ↓
+Feature Engineering
+      ↓
+Model Training
+      ↓
+Forecast Generation
+      ↓
+Analytics Visualization
+      ↓
+PDF / Excel Report Generation
+```
 
 ---
 
-# Forecasting Features
+# Forecasting Capabilities
 
 - Monthly Revenue Forecasting
-- Product-wise Forecasting
+- Product-wise Demand Prediction
 - Category-wise Forecasting
-- Future Demand Prediction
-- Forecast Error Evaluation (MAPE)
+- Sales Trend Analysis
+- Forecast Accuracy Evaluation
 
 ---
 
 # Security Features
 
 - JWT Authentication
-- Protected Frontend Routes
-- Secure API Access
-- Environment Variable Configuration
+- Protected API Routes
+- Secure Environment Variables
+- Token-Based Authorization
+- Frontend Route Protection
 
 ---
 
@@ -205,17 +225,18 @@ ACCESS_TOKEN_EXPIRE_MINUTES=60
 
 - XGBoost Forecasting
 - LSTM Forecasting
-- Real-Time Analytics
-- Role-Based Access Control
+- Real-Time Business Analytics
 - Cloud Deployment
-- Advanced BI Reports
-
+- Role-Based Access Control
+- Advanced BI Dashboard
+  
 ---
 
-# Author
+# Project Highlights
 
-## Syed Mahammad Shareef
-#### Python Developer
-
-# AI-Demand-Forecasting
-
+- Full Stack AI Application
+- Real-Time Forecast Analytics
+- Interactive Business Dashboard
+- Machine Learning Integration
+- Clean Modular Architecture
+- Production-Ready Structure
