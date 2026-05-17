@@ -1,3 +1,4 @@
+
 # AI Demand Forecasting Platform
 
 An AI-powered full-stack business intelligence and demand forecasting platform built using FastAPI, React.js, and Prophet forecasting.
@@ -215,3 +216,6 @@ ACCESS_TOKEN_EXPIRE_MINUTES=60
 
 ## Syed Mahammad Shareef
 #### Python Developer
+
+# AI-Demand-Forecasting
+
